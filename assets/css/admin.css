@@ -1,0 +1,152 @@
+/* Code Mirror */
+.CodeMirror-wrap {
+	border: 1px solid #ddd;
+}
+
+/* Override heatbox */
+.heatbox-header .logo-container img {
+	width: 180px;
+}
+
+/* Heatbox tab nav */
+.heatbox-tab--nav {
+	padding: 20px 0;
+	margin: 10px 0 0 0;
+}
+
+.heatbox-tab--nav ul {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.heatbox-tab--nav-item {
+	display: inline-flex;
+	padding: 10px 30px 10px 0;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.heatbox-tab--nav-item a {
+	color: #23282d;
+	text-decoration: none;
+}
+
+.heatbox-tab--nav-item.is-active a {
+	color: #0073aa;
+}
+
+/* Heatbox tab content */
+.heatbox-tab--content-item {
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s;
+}
+
+.heatbox-tab--content-item.is-active {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+/* PRO styling */
+.uquickview-pro-settings-page-notice {
+	display: inline-block;
+	padding-top: 10px;
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
+}
+
+.uquickview-pro-settings-page-notice p {
+	font-style: italic;
+	display: block;
+	margin: 0 !important;
+}
+
+.uquickview-pro-settings-page-notice .button {
+	margin-top: 10px !important;
+}
+
+/* Featured */
+.uquickview-featured-products > h2 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 24px;
+}
+
+.uquickview-featured-products .products {
+	display: flex;
+	justify-content: space-between;
+}
+
+.uquickview-featured-products .products li {
+	width: 32%;
+}
+
+.uquickview-featured-products .products .subheadline {
+	font-weight: 600;
+	margin-top: -6px;
+}
+
+.uquickview-featured-products .products img {
+	max-width: 100%;
+}
+
+.uquickview-featured-products .credit {
+	margin-top: 20px;
+	text-align: center;
+	opacity: .5;
+}
+
+/* Fields */
+.uquickview-fields {
+	position: relative;
+}
+
+.uquickview-field {
+	margin-bottom: 15px;
+}
+
+.uquickview-inline-fields .uquickview-field:last-child {
+	margin-bottom: 0;
+}
+
+.uquickview-inline-fields {
+	display: flex;
+	position: relative;
+}
+
+.uquickview-inline-fields .uquickview-field {
+	margin-right: 10px;
+}
+
+.uquickview-inline-fields .uquickview-field:last-child {
+	margin-right: 0;
+}
+
+.uquickview-field .wp-picker-input-wrap .color-picker {
+	width: 160px !important;
+}
+
+.uquickview-field .wp-picker-input-wrap {
+	display: inline-flex;
+	max-width: 220px;
+	overflow: hidden;
+	transition: max-width .2s;
+}
+
+.uquickview-field .wp-picker-input-wrap.hidden {
+	display: inline-flex;
+	max-width: 0;
+}
+
+.uquickview-label {
+	display: block;
+	margin-bottom: 3px;
+}
+
+.is-hidden {
+	display: none;
+}

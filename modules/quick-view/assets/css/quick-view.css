@@ -1,0 +1,128 @@
+@-webkit-keyframes loadingSpinAround {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+@keyframes loadingSpinAround {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.product a.uquickview-button,
+.product button.uquickview-button,
+.product .uquickview-button {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.product .uquickview-button.is-loading {
+	justify-content: center;
+	color: transparent !important;
+	pointer-events: none;
+}
+
+.product .uquickview-button.is-loading::after {
+	content: "";
+	position: absolute;
+	width: 1em;
+	display: block;
+	height: 1em;
+	border: 2px solid #dbdbdb;
+	/* border: 2px solid #814676; */
+	border-color: transparent transparent #fff #fff !important;
+	/* border-color: transparent transparent #9B5C8F #9B5C8F !important; */
+	border-radius: 290486px;
+	-webkit-animation: loadingSpinAround 0.5s infinite linear;
+	animation: loadingSpinAround 0.5s infinite linear;
+}
+
+.uquickview-popup {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	z-index: 999;
+}
+
+.uquickview-close-popup {
+	position: absolute;
+	display: inline-block;
+	right: 21px;
+	top: 53px;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	opacity: 0.8;
+	transition: 0.2s opacity;
+}
+
+.uquickview-close-popup::before,
+.uquickview-close-popup::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -1px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	border-radius: 1px;
+}
+
+.uquickview-close-popup::before {
+	transform: rotate(45deg);
+}
+
+.uquickview-close-popup::after {
+	transform: rotate(-45deg);
+}
+
+.uquickview-close-popup:hover {
+	opacity: 1;
+}
+
+.uquickview-popup-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	max-width: 75%;
+	max-height: 75%;
+	background: #fff;
+	overflow: auto;
+	z-index: 9999;
+}
+
+.uquickview-popup-content div.product div.images {
+	margin-bottom: 0;
+}
+
+.uquickview-popup-content div.product div.summary {
+	margin-bottom: 0;
+	padding: 40px;
+}
+
+.uquickview-popup-content div.product figure {
+	margin-bottom: 0;
+}
